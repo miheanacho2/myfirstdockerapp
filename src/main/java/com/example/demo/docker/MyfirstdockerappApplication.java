@@ -9,21 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyfirstdockerappApplication {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(MyfirstdockerappApplication.class, args);
 	}
-
-	@GetMapping("/msg")
+	@GetMapping("/")
 	public String getMsg() {
 		return "welcome to Mike's very nice app :)";
 	}
-
-	@GetMapping("/msg2")
-	public String getMsg2() {
-		return "this is msg 2 for docker and hello...";
-	}
 	
-	
-	
-
 }
